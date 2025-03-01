@@ -1,4 +1,5 @@
 <template>
+  <div class="bg-sky-300 min-h-screen">
     <form class="m-10" @submit.prevent>
         <div>
             <label for="username" class="block mb-2 font-bold">Username</label>
@@ -11,7 +12,8 @@
 
         <button @click="logUserIn" class="bg-green-400 mt-4 px-4 py-2 hover:bg-red-900 hover:text-white">LOGIN</button>
 
-    </form>   
+    </form>  
+  </div> 
 </template>
 
 <script setup>

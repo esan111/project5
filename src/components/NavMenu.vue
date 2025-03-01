@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-slate-900 h-20 items-center text-white flex justify-center space-x-4">
+  <nav class="bg-pink-900 h-20 items-center text-white flex justify-center space-x-4">
     <RouterLink :to="{name: 'Home'}">Home</RouterLink>
     <RouterLink :to="{name: 'Other'}">Other</RouterLink>
 
@@ -7,7 +7,7 @@
 
     <div v-if="isAuthenticated">
       Welcome {{  user.email }}
-      <button @click="logout" class="rounded-md bg-red-600 px-4 py-2 mx-2 text-red-100 hover:bg-red-800">LOGOUT</button>
+      <button @click="logout" class="rounded-md bg-yellow-300 px-4 py-2 mx-2 text-slate-600 hover:bg-orange-400 font-semibold">LOGOUT</button>
     </div>
     <div v-else="">
       <RouterLink :to="{name: 'LoginPage'}">Login</RouterLink>
