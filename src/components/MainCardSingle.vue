@@ -1,5 +1,8 @@
 <script setup>
     import { faker } from '@faker-js/faker'
+    
+    faker.locale = 'en';
+    
     const firstname = faker.person.firstName()
     const lastname = faker.person.lastName()
     const jobtitle = faker.person.jobTitle()
